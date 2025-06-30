@@ -19,13 +19,12 @@
     .home {
       background: url('laptop.jpg') no-repeat center center/cover;
       min-height: 100vh;
+      color: white;
+      text-shadow: 1px 1px 3px black;
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      color: white;
       position: relative;
-      text-shadow: 1px 1px 3px black;
     }
 
     .home::before {
@@ -37,33 +36,23 @@
       z-index: 1;
     }
 
-    .home-content, .home-image {
+    .home .container {
       position: relative;
       z-index: 2;
-      flex: 1 1 300px;
-      padding: 2rem;
     }
 
-    .home-content p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-
-    .home-image img {
-      width: 100%;
-      max-width: 400px;
+    .home img {
+      max-width: 100%;
+      height: auto;
       background: rgba(255,255,255,0.1);
       border-radius: 20px;
       padding: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
 
-    .about {
-      background-color: #f7f7f7;
-    }
-
     .about-image img {
       max-width: 300px;
+      height: auto;
       border-radius: 20px;
       background: #fff;
       padding: 10px;
@@ -73,12 +62,16 @@
     .footer {
       background: #0d6efd;
       color: white;
-      padding: 20px 0;
+      padding: 40px 0;
     }
 
-    .btn-outline-primary:hover {
-      background-color: #0d6efd;
-      color: white;
+    .footer a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -104,8 +97,8 @@
 
 <!-- Home Section -->
 <section class="home">
-  <div class="container d-flex flex-wrap justify-content-center align-items-center py-5">
-    <div class="home-content text-white">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between py-5">
+    <div class="col-md-6">
       <h1 class="mb-3 fw-bold">Welcome to My Website</h1>
       <p>
         I'm a data analyst and Excel expert who turns raw data into valuable insights.
@@ -113,7 +106,7 @@
       </p>
       <p class="fw-semibold mt-3">👉 Let's work together.</p>
     </div>
-    <div class="home-image text-center">
+    <div class="col-md-5 text-center">
       <img src="pic 2.jpeg" alt="Isaac Portfolio Photo">
     </div>
   </div>
@@ -188,7 +181,21 @@
 <!-- Footer -->
 <footer class="footer text-center">
   <div class="container">
-    <p class="mb-0">&copy; 2025 Eluwade Isaac Oluwadamilare. All Rights Reserved.</p>
+    <div class="row">
+      <div class="col-md-6 text-md-start">
+        <p class="mb-2 fw-bold">Eluwade Isaac Oluwadamilare</p>
+        <p>&copy; 2025. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h6 class="fw-bold mb-2">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#cv">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
 
