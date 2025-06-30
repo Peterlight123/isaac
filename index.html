@@ -46,7 +46,6 @@
       height: auto;
       background: rgba(255,255,255,0.1);
       border-radius: 20px;
-      padding: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
 
@@ -97,20 +96,23 @@
 
 <!-- Home Section -->
 <section class="home">
-  <div class="container d-flex flex-wrap align-items-center justify-content-between py-5">
-    <div class="col-md-6">
-      <h1 class="mb-3 fw-bold">Welcome to My Website</h1>
-      <p>
-        I'm a data analyst and Excel expert who turns raw data into valuable insights.
-        From organizing spreadsheets to building interactive dashboards, I help businesses make smarter decisions — faster.
-      </p>
-      <p class="fw-semibold mt-3">👉 Let's work together.</p>
-    </div>
-    <div class="col-md-5 text-center">
-      <img src="pic 2.jpeg" alt="Isaac Portfolio Photo">
+  <div class="container py-5">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-lg-6 col-md-12 text-white">
+        <h1 class="mb-3 fw-bold">Welcome to My Website</h1>
+        <p>
+          I'm a data analyst and Excel expert who turns raw data into valuable insights.
+          From organizing spreadsheets to building interactive dashboards, I help businesses make smarter decisions — faster.
+        </p>
+        <p class="fw-semibold mt-3">👉 Let's work together.</p>
+      </div>
+      <div class="col-lg-6 col-md-12 text-center mt-4 mt-lg-0">
+        <img src="pic 2.jpeg" alt="Isaac Portfolio Photo" class="img-fluid rounded shadow" />
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- About -->
 <section class="about" id="about">
@@ -171,8 +173,8 @@
       <div class="col-12">
         <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
       </div>
-      <div class="col-12 text-center">
-        <button type="submit" class="btn btn-primary bt-5">Send Message</button>
+      <div class="col-12 text-center mb-5">
+        <button type="submit" class="btn btn-primary ">Send Message</button>
       </div>
     </form>
   </div>
