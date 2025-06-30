@@ -5,130 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eluwade Isaac Oluwadamilare - Portfolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
   <style>
-    body { font-family: 'Segoe UI', sans-serif; }
-    header { background-color: #0d6efd; color: white; padding: 60px 0; }
-    section { padding: 60px 0; }
-    .socials a { color: #0d6efd; margin: 0 10px; font-size: 1.2rem; }
-    footer { background: #0d6efd; color: white; padding: 20px 0; }
-    /* GENERAL SECTION LAYOUT */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f9fa;
-  margin: 0;
-}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
 
-header {
-  background-color: #0d6efd;
-  color: white;
-  padding: 60px 0;
-}
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-section {
-  padding: 60px 0;
-}
+    .home {
+      background: url('laptop.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      text-shadow: 1px 1px 3px black;
+    }
 
-/* Navbar */
-.navbar {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+    .home::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px);
+      z-index: 1;
+    }
 
-/* HOME SECTION STYLING */
-.home {
-  background: url('laptop.jpg') no-repeat center center/cover;
-  min-height: 100vh;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-shadow: 1px 1px 3px black;
-  position: relative;
-}
+    .home-content, .home-image {
+      position: relative;
+      z-index: 2;
+      flex: 1 1 300px;
+      padding: 2rem;
+    }
 
-.home::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
-  z-index: 1;
-}
+    .home-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
 
-.home-content, .home-image {
-  position: relative;
-  z-index: 2;
-}
+    .home-image img {
+      width: 100%;
+      max-width: 400px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
 
-.home-content {
-  flex: 1 1 300px;
-  padding: 2rem;
-}
+    .about {
+      background-color: #f7f7f7;
+    }
 
-.home-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
+    .about-image img {
+      max-width: 300px;
+      border-radius: 20px;
+      background: #fff;
+      padding: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
 
-.home-image {
-  flex: 1 1 300px;
-  text-align: center;
-  padding: 1rem;
-}
+    .footer {
+      background: #0d6efd;
+      color: white;
+      padding: 20px 0;
+    }
 
-.home-image img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  background: rgba(255,255,255,0.1);
-  border-radius: 20px;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
-
-/* ABOUT SECTION */
-.about {
-  background-color: #f7f7f7;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 3rem 2rem;
-}
-
-.about-image {
-  flex: 1 1 300px;
-  text-align: center;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 20px;
-  background: #fff;
-  padding: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-.about-content {
-  flex: 1 1 300px;
-}
-
-.socials a {
-  color: #0d6efd;
-  margin: 0 10px;
-  font-size: 1.2rem;
-}
-
-footer {
-  background: #0d6efd;
-  color: white;
-  padding: 20px 0;
-}
-
+    .btn-outline-primary:hover {
+      background-color: #0d6efd;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -151,38 +102,41 @@ footer {
   </div>
 </nav>
 
-<!-- HOME SECTION -->
-<section class="home" id="home">
-  <div class="home-content">
-    <h1>Welcome to My Website</h1>
-    <p>I'm a data analyst and Excel expert who loves turning raw data into clear insights. From organizing spreadsheets to creating dashboards and reports, I help people and businesses make smarter decisions — faster.
-
-Need clean, accurate, and reliable results?
-      <br>
-👉 Let’s work together.</p>
-  </div>
-  <div class="home-image">
-    <img src="pic 2.jpeg" alt="Home Image">
+<!-- Home Section -->
+<section class="home">
+  <div class="container d-flex flex-wrap justify-content-center align-items-center py-5">
+    <div class="home-content text-white">
+      <h1 class="mb-3 fw-bold">Welcome to My Website</h1>
+      <p>
+        I'm a data analyst and Excel expert who turns raw data into valuable insights.
+        From organizing spreadsheets to building interactive dashboards, I help businesses make smarter decisions — faster.
+      </p>
+      <p class="fw-semibold mt-3">👉 Let's work together.</p>
+    </div>
+    <div class="home-image text-center">
+      <img src="pic 2.jpeg" alt="Isaac Portfolio Photo">
+    </div>
   </div>
 </section>
 
-<!-- ABOUT SECTION -->
+<!-- About -->
 <section class="about" id="about">
-  <div class="about-image">
-    <img src="pic-removebg-preview.png" alt="About Me">
-  </div>
-  <div class="about-content">
-    <h2>About Me</h2>
-    <p>I’m a passionate digital services trainee skilled in printing, scanning, and graphic design. I love learning and creating value.</p>
+  <div class="container d-flex flex-wrap align-items-center justify-content-center gap-5">
+    <div class="about-image">
+      <img src="pic-removebg-preview.png" alt="About Image">
+    </div>
+    <div class="about-content">
+      <h2 class="fw-bold mb-3">About Me</h2>
+      <p>I’m a passionate digital services trainee skilled in printing, scanning, basic graphics, and data entry. I enjoy learning and providing real solutions through my skills.</p>
+    </div>
   </div>
 </section>
-
 
 <!-- Skills -->
 <section id="skills" class="bg-light">
   <div class="container">
     <h2 class="text-center mb-5 fw-bold">My Skills</h2>
-    <div class="row text-center">
+    <div class="row text-center g-4">
       <div class="col-md-4">
         <i class="bi bi-calculator fs-1 text-primary"></i>
         <h5 class="mt-3">Bookkeeping</h5>
@@ -199,12 +153,12 @@ Need clean, accurate, and reliable results?
   </div>
 </section>
 
-<!-- View CV -->
-<section id="cv">
+<!-- CV Section -->
+<section id="cv" class="py-5">
   <div class="container text-center">
     <h2 class="fw-bold mb-4">My Resume</h2>
     <p>You can download or view my full resume using the button below.</p>
-    <a href="https://docs.google.com/document/d/1bSwl4NkgzuNhChcGEFP2Hy93O4eQCW66/edit?usp=sharing&ouid=107701630563456823280&rtpof=true&sd=true" target="_blank" class="btn btn-outline-primary">
+    <a href="https://docs.google.com/document/d/1bSwl4NkgzuNhChcGEFP2Hy93O4eQCW66/edit?usp=sharing" target="_blank" class="btn btn-outline-primary">
       <i class="bi bi-file-earmark-person"></i> View My CV
     </a>
   </div>
@@ -216,10 +170,10 @@ Need clean, accurate, and reliable results?
     <h2 class="text-center fw-bold mb-4">Contact Me</h2>
     <form action="https://formspree.io/f/mpwrbdnp" method="POST" class="row g-3">
       <div class="col-md-6">
-        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required />
       </div>
       <div class="col-md-6">
-        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required />
       </div>
       <div class="col-12">
         <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required></textarea>
@@ -232,7 +186,7 @@ Need clean, accurate, and reliable results?
 </section>
 
 <!-- Footer -->
-<footer class="text-center">
+<footer class="footer text-center">
   <div class="container">
     <p class="mb-0">&copy; 2025 Eluwade Isaac Oluwadamilare. All Rights Reserved.</p>
   </div>
