@@ -1,0 +1,15 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+footer {
+  font-size: 0.9rem;
+}
