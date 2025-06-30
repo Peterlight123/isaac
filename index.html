@@ -12,6 +12,62 @@
     section { padding: 60px 0; }
     .socials a { color: #0d6efd; margin: 0 10px; font-size: 1.2rem; }
     footer { background: #0d6efd; color: white; padding: 20px 0; }
+    /* GENERAL SECTION LAYOUT */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* HOME SECTION STYLING */
+.home {
+  background: url('images/laptop.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  padding: 2rem;
+}
+
+.home-content {
+  flex: 1 1 300px;
+}
+
+.home-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* ABOUT SECTION STYLING */
+.about {
+  background-color: #f7f7f7;
+  padding: 3rem 2rem;
+}
+
+.about-content {
+  flex: 1 1 300px;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
   </style>
 </head>
 <body>
@@ -34,23 +90,28 @@
   </div>
 </nav>
 
-<!-- Header -->
-<header class="text-center">
-  <div class="container">
-    <img src="pic-removebg-preview.png" class="rounded-circle mb-3" alt="Isaac" width="130">
-    <h1 class="fw-bold">Eluwade Isaac Oluwadamilare</h1>
-    <p class="lead">Accountant | Financial Analyst | Business Support</p>
-    <a href="#contact" class="btn btn-light mt-3">Hire Me</a>
+<!-- HOME SECTION -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h1>Welcome to My Website</h1>
+    <p>Your intro text goes here. Add something cool about digital skills or services you offer.</p>
   </div>
-</header>
-
-<!-- About -->
-<section id="about">
-  <div class="container">
-    <h2 class="text-center mb-4 fw-bold">About Me</h2>
-    <p class="text-center">I am an Accounting graduate with practical experience in bookkeeping, financial reporting, auditing, and business analysis. Passionate about improving financial performance and helping organizations make informed decisions. I bring professionalism, accuracy, and integrity to every project.</p>
+  <div class="home-image">
+    <img src="images/pic_2-removebg-preview.png" alt="Home Image">
   </div>
 </section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="images/pic-removebg-preview.png" alt="About Me">
+  </div>
+  <div class="about-content">
+    <h2>About Me</h2>
+    <p>I’m a passionate digital services trainee skilled in printing, scanning, and graphic design. I love learning and creating value.</p>
+  </div>
+</section>
+
 
 <!-- Skills -->
 <section id="skills" class="bg-light">
