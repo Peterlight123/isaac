@@ -25,3 +25,6 @@ footer {
   background: #fff;
   padding: 10px;
 }
+ html {
+  scroll-padding-top: 50px; /* Adjust to your navbar height */
+}
